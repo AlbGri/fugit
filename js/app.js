@@ -770,6 +770,32 @@ const App = (() => {
             });
         }
 
+        const shareBtn = document.getElementById('share-toggle');
+        if (shareBtn) {
+            shareBtn.addEventListener('click', async () => {
+                // URL fisso: in modalita' PWA la barra indirizzi non e' visibile
+                const url = 'https://albgri.github.io/fugit/';
+                if (navigator.share) {
+                    hamburgerMenu.classList.add('hidden');
+                    hamburgerBtn.setAttribute('aria-expanded', 'false');
+                    try {
+                        await navigator.share({ title: 'Fugit', text: 'Gestione orari settimanali', url });
+                    } catch (e) {
+                        // AbortError = l'utente ha chiuso il pannello di condivisione
+                    }
+                    return;
+                }
+                const label = document.getElementById('share-label');
+                try {
+                    await navigator.clipboard.writeText(url);
+                    label.textContent = 'Link copiato';
+                } catch (e) {
+                    label.textContent = 'Copia non riuscita';
+                }
+                setTimeout(() => { label.textContent = 'Condividi'; }, 2000);
+            });
+        }
+
         const geoBtn = document.getElementById('geo-toggle');
         if (geoBtn) {
             if (Geofencing.isEnabled()) {

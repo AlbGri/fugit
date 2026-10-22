@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fugit-v27';
+const CACHE_NAME = 'fugit-v28';
 const urlsToCache = [
     './',
     './index.html',

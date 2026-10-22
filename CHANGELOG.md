@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.8.0] - 2026-10-22
+
+- Pulsante Condividi nel menu hamburger: condivide il link dell'app (utile quando è installata come PWA)
+
+---
+
 ## [2.7.0] - 2026-03-15
 
 - Rimosso campo nome dalla registrazione per maggiore privacy
