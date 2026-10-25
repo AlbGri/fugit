@@ -115,6 +115,21 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Assoluta e centrata sul bordo inferiore dell'header: sta nello spazio vuoto
+   verso il contenuto senza alterare il layout. Volutamente poco leggibile. */
+.header-quote {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 8px;
+    font-style: italic;
+    line-height: 1.25;
+    color: var(--text-muted);
+    opacity: 0.35;
+}
+
 main {
     display: flex;
     flex-direction: column;

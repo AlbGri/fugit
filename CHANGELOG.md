@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.8.1] - 2026-10-25
+
+- Citazione da "L'Horloge" di Baudelaire nell'header, in piccolo e volutamente poco leggibile
+
+---
+
 ## [2.8.0] - 2026-10-22
 
 - Pulsante Condividi nel menu hamburger: condivide il link dell'app (utile quando è installata come PWA)
