@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.8.2] - 2026-11-04
+
+- Nuovo indirizzo dell'app: fugit.albgri.com. Il pulsante Condividi e l'anteprima del link usano quello nuovo. Il vecchio indirizzo albgri.github.io/fugit continua a funzionare, e chi ha già installato l'app non deve fare nulla
+
+---
+
 ## [2.8.1] - 2026-10-25
 
 - Citazione da "L'Horloge" di Baudelaire nell'header, in piccolo e volutamente poco leggibile

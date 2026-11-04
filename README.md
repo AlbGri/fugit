@@ -110,7 +110,7 @@ Per sincronizzare i dati tra dispositivi, cliccare "Accedi" e creare un account.
 
 ## Deploy
 
-**Live**: [albgri.github.io/fugit](https://albgri.github.io/fugit/)
+**Live**: [fugit.albgri.com](https://fugit.albgri.com/), servito da GitHub Pages tramite un Worker Cloudflare. Anche [albgri.github.io/fugit](https://albgri.github.io/fugit/) resta valido.
 
 L'app è composta solo da file statici. Può essere servita da qualsiasi web server (GitHub Pages, Codeberg Pages, Netlify, ecc.) oppure aperta direttamente dal file system.
 

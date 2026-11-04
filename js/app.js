@@ -774,7 +774,7 @@ const App = (() => {
         if (shareBtn) {
             shareBtn.addEventListener('click', async () => {
                 // URL fisso: in modalita' PWA la barra indirizzi non e' visibile
-                const url = 'https://albgri.github.io/fugit/';
+                const url = 'https://fugit.albgri.com/';
                 if (navigator.share) {
                     hamburgerMenu.classList.add('hidden');
                     hamburgerBtn.setAttribute('aria-expanded', 'false');
