@@ -138,7 +138,7 @@ Tag git di riferimento:
 
 ## Licenza
 
-[CC BY-NC-SA 4.0](LICENSE)
+[AGPL-3.0](LICENSE)
 
 ## Autore
 

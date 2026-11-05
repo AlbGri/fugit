@@ -1,7 +1,7 @@
 /**
  * File: source-protection-silent.js
  * Author: AlbGri
- * Copyright: (c) 2026 Alberto G. - Licensed under CC BY-NC-SA 4.0
+ * Copyright: (c) 2026 Alberto G. - Licensed under AGPL-3.0
  * Description: Protezione sorgente silenziosa per sottoprogetti.
  *              Blocca DevTools e menu contestuale senza mostrare modal.
  *              Disabilitata automaticamente in ambiente development.

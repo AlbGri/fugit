@@ -1,6 +1,6 @@
 # File: robots.txt
 # Author: AlbGri
-# Copyright: (c) 2026 Alberto G. - Licensed under CC BY-NC-SA 4.0
+# Copyright: (c) 2026 Alberto G. - Licensed under AGPL-3.0
 # Description: Direttive per bloccare indicizzazione e AI training
 
 # Blocco generale per tutti i bot
