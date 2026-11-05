@@ -9,6 +9,6 @@
  */
 const SupabaseConfig = {
     URL: 'https://rhssnwcmlxcmlphvdezh.supabase.co',
-    KEY: 'sb_publishable_f6WIwmsZZvkbDciMzNqnlQ_nuNzAGXF',
+    KEY: 'sb_publishable_f6WIwmsZZvkbDciMzNqnlQ_nuNzAGXF', // gitleaks:allow
     EMAIL_DOMAIN: 'orari-ufficio.app'
 };
