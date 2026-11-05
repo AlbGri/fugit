@@ -2,9 +2,11 @@
 .claude/
 CLAUDE.md
 
-# File per sessioni AI (locali, non pushati)
-STATO_PROGETTO.md
+# Documenti locali
 _local/
+/*.md
+!/README.md
+!/CHANGELOG.md
 
 # IDE
 .vscode/
