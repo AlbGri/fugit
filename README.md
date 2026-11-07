@@ -57,7 +57,7 @@ Calcolato dinamicamente dai giorni effettivamente compilati:
 - Tema chiaro/scuro con toggle manuale e rispetto preferenza di sistema
 - Layout responsive mobile-first
 - Accessibilità WCAG 2.1 AA (focus visibili, contrasti verificati, aria-live, prefers-reduced-motion)
-- Meta tag di sicurezza e privacy: blocco indicizzazione, blocco crawler AI, referrer policy restrittiva, Content Security Policy (CSP)
+- Meta tag di sicurezza e privacy: blocco indicizzazione, referrer policy restrittiva, Content Security Policy (CSP)
 
 ## Struttura del progetto
 
