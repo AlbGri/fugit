@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.4] - 2026-11-24
+
+- Le icone del menu, del calendario, della Pausa Pranzo e dei messaggi sono disegnate dall'app al posto delle emoji e appaiono uguali su ogni telefono
+- Nelle Novità e nella Privacy i titoletti hanno il colore dell'app
+
+---
+
 ## [2.8.3] - 2026-11-24
 
 - L'informativa sulla privacy dice che su fugit.albgri.com Cloudflare salva un cookie tecnico (cf_clearance) per distinguere i browser dai programmi automatici
