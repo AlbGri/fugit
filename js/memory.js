@@ -5,9 +5,9 @@
  */
 const Memory = (() => {
     const EMOJI = [
-        '\u{1F9D9}', '\u{1F9DD}', '\u{1F9DB}', '\u{1F9DC}', '\u{1F9DA}', '\u{1F409}',
-        '\u{1F984}', '\u{1F47B}', '\u{1F480}', '\u{1F3F0}', '\u2694\uFE0F', '\u{1F6E1}\uFE0F',
-        '\u{1F52E}', '\u{1FA84}', '\u{1F451}', '\u{1F48E}', '\u{1F9DE}', '\u{1F344}'
+        '\u{1F9D9}', '\u{1F9DD}', '\u{1F9DB}', '\u{1F9DC}', '\u{1F9DA}', '\u{1F409}', // stile:consentito
+        '\u{1F984}', '\u{1F47B}', '\u{1F480}', '\u{1F3F0}', '\u2694\uFE0F', '\u{1F6E1}\uFE0F', // stile:consentito
+        '\u{1F52E}', '\u{1FA84}', '\u{1F451}', '\u{1F48E}', '\u{1F9DE}', '\u{1F344}' // stile:consentito, le carte del gioco
     ];
     const GRID_SIZE = 36;
     const PAIRS = 18;

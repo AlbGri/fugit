@@ -6,6 +6,10 @@
 const Calendar = (() => {
     const GIORNI_HEADER = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'];
     const GIORNI_COMPLETI = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
+    const SVG_ATTR = 'class="icona" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+    const ICONA_DESTRA = `<svg ${SVG_ATTR}><path d="M6 3l5 5-5 5"/></svg>`;
+    const ICONA_SINISTRA = `<svg ${SVG_ATTR}><path d="M10 3 5 8l5 5"/></svg>`;
+    const ICONA_AVVISO = `<svg ${SVG_ATTR}><path d="M8 2 1.5 13.5h13z"/><path d="M8 6.5v3M8 11.5v.01"/></svg>`;
     const MESI_IT = [
         'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
         'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'
@@ -124,7 +128,7 @@ const Calendar = (() => {
         const freccia = document.createElement('span');
         freccia.className = 'calendario-summary-freccia';
         freccia.setAttribute('aria-hidden', 'true');
-        freccia.textContent = '\u25B6';
+        freccia.innerHTML = ICONA_DESTRA;
 
         summary.appendChild(testo);
         summary.appendChild(freccia);
@@ -151,7 +155,7 @@ const Calendar = (() => {
         btnPrec.type = 'button';
         btnPrec.className = 'btn-nav-mese';
         btnPrec.setAttribute('aria-label', 'Mese precedente');
-        btnPrec.textContent = '\u25C0';
+        btnPrec.innerHTML = ICONA_SINISTRA;
         btnPrec.addEventListener('click', () => navigaMese(-1));
 
         const label = document.createElement('span');
@@ -163,7 +167,7 @@ const Calendar = (() => {
         btnSucc.type = 'button';
         btnSucc.className = 'btn-nav-mese';
         btnSucc.setAttribute('aria-label', 'Mese successivo');
-        btnSucc.textContent = '\u25B6';
+        btnSucc.innerHTML = ICONA_DESTRA;
         btnSucc.addEventListener('click', () => navigaMese(1));
 
         header.appendChild(btnPrec);
@@ -313,7 +317,8 @@ const Calendar = (() => {
             const minuti = risultati.deltaGiornaliero;
 
             const sottoMinimo = minuti !== null && minuti < -120;
-            deltaEl.textContent = _formatDeltaBreve(minuti) + (sottoMinimo ? ' \u26A0' : '');
+            deltaEl.textContent = _formatDeltaBreve(minuti);
+            if (sottoMinimo) deltaEl.insertAdjacentHTML('beforeend', ICONA_AVVISO);
             deltaEl.className = 'calendario-giorno-delta';
             if (minuti !== null && minuti >= 0) deltaEl.classList.add('delta-positivo');
             if (minuti !== null && minuti < 0) deltaEl.classList.add('delta-negativo');

@@ -16,7 +16,7 @@
             const trimmed = riga.trim();
             if (!trimmed || trimmed === '---' || trimmed.startsWith('# ')) continue;
             if (trimmed.startsWith('## ')) {
-                const testo = trimmed.replace(/^## \[(.+?)\] - (.+)$/, '<strong>$1</strong> &mdash; $2');
+                const testo = trimmed.replace(/^## \[(.+?)\] - (.+)$/, '<strong>$1</strong> ($2)');
                 html += `<h3 class="changelog-version">${testo}</h3>`;
             } else if (trimmed.startsWith('- ')) {
                 html += `<p class="changelog-item">${trimmed.substring(2)}</p>`;

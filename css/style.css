@@ -222,7 +222,6 @@ main {
 }
 
 .calendario-summary-freccia {
-    font-size: 0.7rem;
     transition: transform 0.2s;
     color: var(--text-muted);
 }
@@ -382,6 +381,12 @@ main {
     min-height: 0.7rem;
 }
 
+.calendario-giorno-delta .icona {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.1em;
+}
+
 .delta-positivo {
     color: var(--success-color);
 }
@@ -481,14 +486,12 @@ main {
     display: none;
 }
 
-.pranzo-details summary::after {
-    content: '\25B6';
-    font-size: 0.6rem;
-    margin-left: auto;
+.pranzo-details .pranzo-freccia {
+    margin: 0 0 0 auto;
     transition: transform 0.2s;
 }
 
-.pranzo-details[open] summary::after {
+.pranzo-details[open] .pranzo-freccia {
     transform: rotate(90deg);
 }
 
@@ -920,11 +923,9 @@ footer {
 
 /* Indicatore sync pendente */
 .sync-pending {
-    font-size: 1.1rem;
     color: var(--warning-color);
     animation: sync-spin 2s linear infinite;
     cursor: default;
-    line-height: 1;
 }
 
 @keyframes sync-spin {
@@ -996,25 +997,14 @@ footer {
 }
 
 
-.geo-icon::before {
-    content: '\1F4CD\FE0E';
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
 .theme-icon {
-    font-size: 1.2rem;
-    line-height: 1;
     display: inline-block;
     transition: transform 0.3s ease-in-out;
 }
 
-.theme-icon.light::before {
-    content: '\2600\FE0E';
-}
-
-.theme-icon.dark::before {
-    content: '\1F319\FE0E';
+.theme-icon.dark .icona-sole,
+.theme-icon:not(.dark) .icona-luna {
+    display: none;
 }
 
 .theme-icon.rotating {
@@ -1101,8 +1091,12 @@ footer {
 
 .hamburger-item > :first-child {
     width: 1.4rem;
-    text-align: center;
     flex-shrink: 0;
+}
+
+.icona {
+    display: block;
+    margin-inline: auto;
 }
 
 .hamburger-item:hover {
@@ -1346,7 +1340,6 @@ footer {
 .msg-btn-indietro {
     background: transparent;
     border: none;
-    font-size: 1.3rem;
     cursor: pointer;
     color: var(--text-muted);
     min-width: 44px;
@@ -1557,17 +1550,16 @@ footer {
 .changelog-version {
     font-size: 0.95rem;
     margin: 1rem 0 0.3rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 .changelog-item {
+    display: list-item;
+    list-style: disc;
     font-size: 0.85rem;
-    margin: 0.15rem 0;
-    padding-left: 0.8rem;
-    text-indent: -0.8rem;
+    margin: 0.15rem 0 0.15rem 1.1rem;
     line-height: 1.4;
 }
-.changelog-item::before {
-    content: "\2022 ";
+.changelog-item::marker {
     color: var(--text-muted);
 }
 
@@ -1575,7 +1567,7 @@ footer {
 .privacy-section {
     font-size: 0.95rem;
     margin: 1rem 0 0.3rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 .privacy-text {
     font-size: 0.85rem;
@@ -1598,11 +1590,6 @@ footer {
     text-align: center;
     color: var(--text-muted);
     margin-bottom: 1rem;
-}
-
-.memory-menu-icon {
-    font-size: 1.2rem;
-    line-height: 1;
 }
 
 .memory-info-bar {
