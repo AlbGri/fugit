@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.8.3] - 2026-11-24
+
+- L'informativa sulla privacy dice che su fugit.albgri.com Cloudflare salva un cookie tecnico (cf_clearance) per distinguere i browser dai programmi automatici
+
+---
+
 ## [2.8.2] - 2026-11-04
 
 - Nuovo indirizzo dell'app: fugit.albgri.com. Il pulsante Condividi e l'anteprima del link usano quello nuovo. Il vecchio indirizzo albgri.github.io/fugit continua a funzionare, e chi ha già installato l'app non deve fare nulla
